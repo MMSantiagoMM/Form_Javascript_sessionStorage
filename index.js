@@ -7,8 +7,8 @@ const Button = document.getElementById("button");
 
 
 
-Button.addEventListener("click", (info) => {
-    info.preventDefault()
+Button.addEventListener("click", () => {
+
     let first = boxFirstN.value;
     let last = boxLastN.value;
     let user = boxUser.value;
@@ -51,5 +51,4 @@ Button.addEventListener("click", (info) => {
         appointment.push(field)
         sessionStorage.setItem("dates", JSON.stringify(appointment))
     }
-
 })
